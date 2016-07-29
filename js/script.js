@@ -1,5 +1,19 @@
 window.onload = function(){
 
+//	new WOW().init();
+
+	/* Efectos Inicio */	
+	 wow = new WOW({
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         false        // default
+                    })
+      wow.init();
+
+/*          ------------------           */
+
 	$(".textLt").textillate({
 		minDisplayTime: 2000,
 		sync: false,
@@ -7,6 +21,10 @@ window.onload = function(){
 			effect: 'fadeInLeftBig'
 		}
 	});
+
+
+
+	/* Efectos fin */
 
 	$("#inicioSesion").submit(function(e){
 		e.preventDefault();

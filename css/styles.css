@@ -245,3 +245,27 @@ form:after {
 	background-position: 0 -135px;
 	color: #00aeef;
 }
+
+.mbr-arrow {
+  bottom: 71px;
+  left: 0;
+  line-height: 1px;
+  padding: 0 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+.mbr-arrow__link {
+  display: inline-block;
+  font-size: 26px;
+}
+.mbr-arrow__link,
+.mbr-arrow__link:hover,
+.mbr-arrow__link:focus {
+  color: #fff;
+}
+.mbr-arrow--floating .mbr-arrow__link {
+  -webkit-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+  -o-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+  animation: floating-arrow 1.6s infinite ease-in-out 0s;
+}
